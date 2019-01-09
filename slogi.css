@@ -3,7 +3,6 @@ html,body{
     padding:0; 
 }
 #ZgornjaPasica{
-	background-color:cyan; 
 	height: 100px;
 	width: 950px; 
 	display: flex;
@@ -25,23 +24,36 @@ html,body{
 	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: flex-end;
-	align items: flex-end;
+	align-items: flex-end;
 
 
 }
+#FacebookTwitter a {
+	margin-bottom: 8px;
+	margin-left:5px;
+}
+#FacebookTwitter p {
+	font-size: 14px;
+}
 #GlavniOkvir
 {
-	background-color:pink;
 	margin:0 auto 0 auto; 
 	width: 950px;
 }
 #Glava{
-	background-color:blue;
+	background-image: url('./Grafika/glava.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom; 
 	height: 200px;
 	width: 950px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
 #Navigacija{
-	background-color:green;
+	background: transparent url('./Grafika/navigacija.png') no-repeat center top;
+	background-size: cover;
+	background-position: center bottom; 
 	height: 30px;
 	width: 950px;
 }
@@ -52,8 +64,29 @@ html,body{
 	justify-content: flex-start;
 	align-items: center;
 	list-style-type: none;
-	height: 30px; 
+	height: 30px;
+	margin: 0px; 
 }
+#Navigacija a:link, 
+#Navigacija a:visited, 
+#Navigacija a:hover,
+#Navigacija a:active{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	border-bottom: 0px;
+	padding: 7px 10px;
+	box-sizing: border-box; 
+	transition: all .75s ease;
+}
+#Navigacija a:hover,
+#Navigacija a:active{
+	background-color: rgba(115,155,210,.35);
+	transition: all 1s ease;
+}
+
 #Vsebina{
 	background-color: red;
 	min-height: 350px;
