@@ -169,3 +169,26 @@ h2{
 #Noga a:hover{
 	text-decoration: underline;
 }
+#Tabela {
+		width:400px;
+		border-collapse: collapse;
+		cursor: default;
+		}
+	#Tabela td, #Tabela th {
+		padding: 5px;
+		box-sizing: border-box;
+		border:#000 solid 1px;
+		-webkit-transition: all 1s ease;
+		transition: all 1s ease;
+		}
+	#Tabela th {
+		background-color:#CCC;
+		}
+	#Tabela tr:nth-child(even) td {
+		background-color:#F7F7F7;
+		}
+	#Tabela tr:hover td {
+		background-color:#EEE;
+		-webkit-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		}
